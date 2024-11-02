@@ -7,6 +7,7 @@ import { ChatErrorType } from '@/types/fetch';
 import { createErrorResponse } from '@/utils/errorResponse';
 
 export const runtime = 'edge';
+export const preferredRegion = ['sin1', 'hnd1'];
 
 const noNeedAPIKey = (provider: string) =>
   [ModelProvider.OpenRouter, ModelProvider.TogetherAI].includes(provider as any);
