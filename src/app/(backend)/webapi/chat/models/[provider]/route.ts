@@ -10,7 +10,7 @@ export const runtime = 'edge';
 export const preferredRegion = ['sin1', 'hnd1'];
 
 const noNeedAPIKey = (provider: string) =>
-  [ModelProvider.OpenRouter, ModelProvider.TogetherAI].includes(provider as any);
+  [ModelProvider.OpenRouter].includes(provider as any);
 
 export const GET = checkAuth(async (req, { params, jwtPayload }) => {
   const { provider } = await params;
